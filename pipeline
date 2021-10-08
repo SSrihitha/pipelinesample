@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage ("Jenkins Build") {
+            steps {
+                echo "This is jenkins build environment"   
+            }
+        }
+        stage ("Jenkins Test") {
+            steps {
+                echo "This is jenkins Test environment"   
+            }
+        }
+        stage ("Jenkins Prod") {
+            steps {
+                echo "This is jenkins Prod environment"   
+            }
+        }
+    }
+}
